@@ -1,0 +1,211 @@
+import os
+import openpyxl
+import sys
+from reportlab.pdfgen import canvas
+pd = canvas.Canvas("result.pdf")
+
+
+
+def start():
+    print ("Greeting!!! from Sitakanta Mohapatra")
+    name = input("Enter Your Full Name Here:    ")
+    print ('hello' +" "+ name+" This is S Mohapata, amature astrologer ")
+
+    dob = input("Enter your DOB(xx-xx-xxxx:  ")
+    conc = (name + dob)
+    listname = list (conc)
+
+    print (listname)
+    cumnum = 0
+    for i in range (len(listname)):
+    
+        listchar = listname[i]
+
+        if listchar == 'a':
+            num = 1
+        elif listchar == 'b':
+            num = 2
+        elif listchar == 'c':
+            num = 3
+        elif listchar == 'd':
+            num = 4
+        elif listchar == 'e':
+            num = 5
+        elif listchar == 'f':
+            num = 6
+        elif listchar == 'g':
+            num = 7
+        elif listchar == 'h':
+            num = 8
+        elif listchar == 'i':
+            num = 9
+        elif listchar == 'j':
+            num = 10 
+        elif listchar == 'k':
+            num = 11
+        elif listchar == 'l':
+            num = 12
+        elif listchar == 'm':
+            num = 13
+        elif listchar == 'n':
+            num = 14
+        elif listchar == 'o':
+            num = 15
+        elif listchar == 'p':
+            num = 16
+        elif listchar == 'q':
+            num = 17
+        elif listchar == 'r':
+            num = 18
+        elif listchar == 's':
+            num = 19
+        elif listchar == 't':
+             num = 20
+        elif listchar == 'u':
+            num = 21
+        elif listchar == 'v':
+            num = 22
+        elif listchar == 'w':
+            num = 23
+        elif listchar == 'x':
+            num = 24
+        elif listchar == 'y':
+            num = 25
+        elif listchar == 'z':
+            num = 26
+        elif listchar == '1':
+            num = 1
+        elif listchar == '2':
+            num = 2
+        elif listchar == '3':
+            num = 3
+        elif listchar == '4':
+            num = 4
+        elif listchar == '5':
+            num = 5
+        elif listchar == '6':
+            num = 6
+        elif listchar == '7':
+            num = 7
+        elif listchar == '8':
+            num = 8
+        elif listchar == '9':
+            num = 9
+        elif listchar == '0':
+            num = 0
+        elif listchar == 'A':
+            num = 1
+        elif listchar == 'B':
+            num = 2
+        elif listchar == 'C':
+            num = 3
+        elif listchar == 'D':
+            num = 4
+        elif listchar == 'E':
+            num = 5
+        elif listchar == 'F':
+            num = 6
+        elif listchar == 'G':
+            num = 7
+        elif listchar == 'H':
+            num = 8
+        elif listchar == 'I':
+            num = 9
+        elif listchar == 'J':
+            num = 10 
+        elif listchar == 'K':
+            num = 11
+        elif listchar == 'L':
+            num = 12
+        elif listchar == 'M':
+            num = 13
+        elif listchar == 'N':
+            num = 14
+        elif listchar == 'O':
+            num = 15
+        elif listchar == 'P':
+            num = 16
+        elif listchar == 'Q':
+            num = 17
+        elif listchar == 'R':
+            num = 18
+        elif listchar == 'S':
+            num = 19
+        elif listchar == 'T':
+             num = 20
+        elif listchar == 'U':
+            num = 21
+        elif listchar == 'V':
+            num = 22
+        elif listchar == 'W':
+            num = 23
+        elif listchar == 'X':
+            num = 24
+        elif listchar == 'Y':
+            num = 25
+        elif listchar == 'Z':
+            num = 26
+        
+        
+        else:
+            num = 0
+
+        cumnum = cumnum+num
+    print (cumnum)
+    a = str(cumnum)
+    x = int(a)
+    sum = 0
+    for i in range(0,len(a),1):
+        b = int(x/10)
+        c = x%10
+        x = b
+        sum = sum + c
+    print (sum)
+    while (sum>9):
+
+        sum = (int(sum/10)+(sum%10))
+            
+    digit = sum
+
+    print (digit)
+
+    if (digit == 1):
+
+        pd.drawString(100,0,"2018 is a highly favorable year for number 1 natives.,'/n' This is the right time to start new3 ventures or take a new direction in our life. Your long term dreams will come true in this year. Your family life will be blissful and you will have a good support from your colleagues, family members and parents. Female support at every front will be rewarding. This is going to be a highly thrilling year for love birds. A lot of romantic moments await you in course of the year. Your love proposals will give positive results. You will enjoy peace of mind and energy all through the year. Now, you can get personalized predictions by top astrologers")
+        pd.save()
+        os.startfile("result.pdf")
+    elif (digit == 2):
+        print("Number 2 natives will find this a great year. 2018 will bring a lot of exciting developments in your career front as well as finance. Good fortune awaits you with handful of gifts you will cherish in your life. Businesses related to diary, pearls and art will fetch high profits and will grow to new heights this year. Those in artistic jobs will flourish in 2018. The support of your mother will give you highly favourable results. This year will bring blessed prospects for married people. The family life will be happy. Singles will come across a passionate love encounter. Alongside work, take good care of your health to support all your happy and successful ventures.")
+    elif (digit == 3):
+        print("The natives of number 3 will find only average results during this year. The prospects of this year will be almost similar to what you experienced during last year. Never give up your endurance. Never give up trying since your hard work is the key to sustain the results coming to you. During the early part of the year, you might be concerned about your future. However, the eventual developments will be encouraging. The regular and routine kind of life might bore you. Stay balanced to treat ups and downs equally as all your experiences this year will contribute to your learning and maturity in a way shaping your personality. You will do a lot of charity and earn appreciation.")
+
+    elif (digit == 4):
+        print("4 number natives will not have a smooth year in 2018 as you are most likely to confront a lot of challenges. Nevertheless, never give up working hard since they will get you the desired results. Both personal and career life will stress you. Try to remedy your weaknesses and build on your strengths to say successful. You must trust your instincts to guide you. Beware of negative thoughts that will only bring misfortune and bad luck. Since you are most likely to be affected psychologically, Yoga and meditation will do you a lot of good. Pay special attention to your mother’s health. Students must avoid distractions and improve their concentration.")
+
+    elif (digit == 5):
+        print("The natives of number 5 will see mixed prospects during this year. You will await a lot of challenges in personal as well as professional life. Regulate your thoughts and pay attention to your behavior. Avoid arguments at workplace. Control your speech in order to maintain harmony in relationships. Try to be friendly with all around you in order to stay in a peaceful atmosphere. Stay positive to see some developments in your career. Take good care of your finances since uncontrolled expenses will burn a big hole in your budget. The money you save now will benefit you in future. Students must put in added efforts to succeed.")
+
+    elif (digit == 6):
+        print("The natives of number 6 must put in extra efforts to get the desired results in 2018. Things will slow down this year. Nevertheless, good luck will favor you with gradual developments. Alongside hard work, you must also be smart enough to benefit from the opportunities coming in your way. You must take care of your reproductive health this year. Also pay a special attention to your mother’s health too. The troubles you face distract you from focusing on your work or studies. Stay positive to escape from all tensions as the year moves. You might await some disturbances in your love life. Develop a good understanding and stay calm to maintain good relationships.")
+    elif (digit == 7):
+        print("Numerology number 7 natives will see a happy life this year. So18 will bring you a lot of amazing opportunities. The good deeds of the past will bless you now with favorable results. There are some massive changes expected in your life in every front. Businesses might yield some unexpected profits and those employed will get promotions and salary hikes. Experts say you must maintain your finances the right way to avoid losses. There are big chances for celebrations at home. Your knowledge and thinking will be shaped during this year. In family life, you will get the love and care you duly deserve. The support and advice of your maternal grandfather will benefit you.")
+    elif (digit == 8):
+        print("There might be a lot of hurdles to progress for the natives of number 8 in 2018. The tough situations you face as a result of your past negative deeds might stress you. Things might not happen the way you want. Never take any major decisions without enough forethought. In your personal life, you might see several delays and hurdles. Students might face a lot of difficulties with their studies and lack of concentration will steal their performance. Never suspect your partner without a valid reason. Take care of your habits since your wrong lifestyle might bring you some illnesses.")
+    elif (digit == 9):
+        print("2018 is going to bring a lot of good news to the natives of number 9. Life will bring some positive changes. You will find new sources of additional income. You will do very well at work and win the appreciation of your seniors and colleagues. Your business might bring you some surprising gains. Those in power and politics and athletics will find this year a great time in their career. Students will stay highly productive. Singles will meet their lovers and those in love will move their relationship to marriage. Practice some yoga and meditation to stay fit mentally and physically")
+
+    else:
+        print('You are "GOD", No prediction for you')
+start()
+
+sc = input("(start(s)/close(c)")
+
+while (sc == "s"):
+    start()
+    
+
+
+
+       
+       
+       
