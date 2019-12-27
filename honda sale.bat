@@ -1,3 +1,3 @@
-C:\Users\Administrator\Desktop\s07\hondasales\path
-C:\Users\Administrator\Desktop\s07\hondasales\hondasales.py
-PAUSE
+C:\python372\Scripts\path
+
+C:\Users\Administrator\Desktop\s07\registration\registration.py
